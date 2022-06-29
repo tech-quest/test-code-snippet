@@ -21,7 +21,7 @@ final class UserNameTest extends TestCase
      */
     public function construct_21文字以上ならエラー(): void
     {
-        $this->expectException(InvariantException::class);
+        $this->expectException(\Exception::class);
 
         new UserName('123451234512345123451');
     }
