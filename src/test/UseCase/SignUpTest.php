@@ -12,8 +12,8 @@ use App\Domain\ValueObject\InputPassword;
 use App\Domain\ValueObject\HashedPassword;
 use App\Domain\ValueObject\User\NewUser;
 use App\Domain\Entity\User;
-use App\Domain\Interface\UserQueryInterface;
-use App\Domain\Interface\UserCommandInterface;
+use App\Domain\Interface\UserQuery;
+use App\Domain\Interface\UserCommand;
 
 final class SignUpTest extends TestCase
 {
@@ -28,14 +28,14 @@ final class SignUpTest extends TestCase
             new InputPassword('techquest1')
         );
 
-        $userQuery = new class implements UserQueryInterface {
+        $userQuery = new class implements UserQuery {
             public function findByEmail(Email $email): ?User
             {
                 return null;
             }
         };
 
-        $userCommand = new class implements UserCommandInterface {
+        $userCommand = new class implements UserCommand {
             public function insert(NewUser $user): void
             {
             }
@@ -56,7 +56,7 @@ final class SignUpTest extends TestCase
             new InputPassword('techquest1')
         );
 
-        $userQuery = new class implements UserQueryInterface {
+        $userQuery = new class implements UserQuery {
             public function findByEmail(Email $email): ?User
             {
                 return new User(
@@ -68,7 +68,7 @@ final class SignUpTest extends TestCase
             }
         };
 
-        $userCommand = new class implements UserCommandInterface {
+        $userCommand = new class implements UserCommand {
             public function insert(NewUser $user): void
             {
             }

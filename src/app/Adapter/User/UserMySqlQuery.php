@@ -8,8 +8,9 @@ use App\Domain\ValueObject\User\UserId;
 use App\Domain\ValueObject\User\UserName;
 use App\Domain\ValueObject\Email;
 use App\Domain\ValueObject\HashedPassword;
+use App\Adapter\User\UserMySqlQuery;
 
-final class UserQuery implements UserQueryInterface
+final class UserMySqlQuery implements UserQuery
 {
     /**
      * @var UserDao

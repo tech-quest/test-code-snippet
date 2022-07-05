@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../../vendor/autoload.php';
 use App\Domain\ValueObject\Email;
 use App\Domain\Entity\User;
 
-interface UserQueryInterface
+interface UserQuery
 {
     public function findByEmail(Email $email): ?User;
 }
