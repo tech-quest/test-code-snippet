@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
-use App\Domain\ValueObject\UserName;
+use App\Domain\ValueObject\User\UserName;
 
 final class UserNameTest extends TestCase
 {

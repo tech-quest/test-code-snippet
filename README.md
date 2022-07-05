@@ -1,18 +1,18 @@
 # 🐳
 
-## 環境構築
+## phpunit の導入手順
 
 ### 1. 「tq-docker-template」リポジトリをテンプレートとして、自身の Github にリポジトリを作成
 
 <img width="1440" alt="スクリーンショット 2021-12-24 11 05 14" src="https://user-images.githubusercontent.com/63081802/147306983-b09827a5-cdbd-4061-a1c3-390496b266a8.png">
 
-### 2. ローカルにcloneする
+### 2. ローカルに clone する
 
-### 3. Dockerのインストール
+### 3. Docker のインストール
 
 ### 4. 「Docker Desktop」の起動
 
-### 5. 「Dockerコンテナ」の起動
+### 5. 「Docker コンテナ」の起動
 
 ```
 ./docker-compose-local.sh up
