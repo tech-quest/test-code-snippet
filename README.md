@@ -9,7 +9,7 @@
 ### 2. [composer update]コマンドを実行しましょう
 
 ```
-composer update
+./composer.sh update
 ```
 
 [参考記事](https://qiita.com/YusukeHigaki/items/47dd3ec23544225f7301)
