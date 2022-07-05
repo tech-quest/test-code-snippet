@@ -2,42 +2,14 @@
 
 ## phpunit の導入手順
 
-### 1. 「tq-docker-template」リポジトリをテンプレートとして、自身の Github にリポジトリを作成
+### 1. [src/composer.json]ファイルの作成
 
-<img width="1440" alt="スクリーンショット 2021-12-24 11 05 14" src="https://user-images.githubusercontent.com/63081802/147306983-b09827a5-cdbd-4061-a1c3-390496b266a8.png">
+このスニペットの[src/composer.json]を参考に修正してみましょう
 
-### 2. ローカルに clone する
-
-### 3. Docker のインストール
-
-### 4. 「Docker Desktop」の起動
-
-### 5. 「Docker コンテナ」の起動
+### 2. [composer update]コマンドを実行しましょう
 
 ```
-./docker-compose-local.sh up
+composer update
 ```
 
-## その他コマンド
-
-### Docker 環境に変更があった時
-
-```
-./docker-compose-local.sh up --build
-```
-
-## ページ紹介
-
-php
-
-[localhost:8080](http://localhost:8080)
-
-PHPMyAdmin
-
-[localhost:3306](http://localhost:3306)
-
-## 設定を変更したい
-
-```
-localhost:8080をhtmlが表示されるようにしたい -> nginx/default.conf 4行目を index index.htmlにする。
-```
+[参考記事](https://qiita.com/YusukeHigaki/items/47dd3ec23544225f7301)
