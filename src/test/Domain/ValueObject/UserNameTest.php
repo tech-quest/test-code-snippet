@@ -9,17 +9,17 @@ final class UserNameTest extends TestCase
     /**
      * @test
      */
-    public function construct_(): void
+    public function ユーザー名が20文字以下の場合_例外が発生しないこと(): void
     {
-        $actual = new UserName('1234567890');
+        $actual = new UserName('12345678901234567890');
 
-        $this->assertSame('1234567890', $actual->value());
+        $this->assertSame('12345678901234567890', $actual->value());
     }
 
     /**
      * @test
      */
-    public function construct_21文字以上ならエラー(): void
+    public function ユーザー名が21文字以上の場合_例外が発生すること(): void
     {
         $this->expectException(\Exception::class);
 

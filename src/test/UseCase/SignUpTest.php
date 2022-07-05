@@ -20,7 +20,7 @@ final class SignUpTest extends TestCase
     /**
      * @test
      */
-    public function run_()
+    public function DBに同じメールのユーザー情報が存在しない場合_trueが返ってくること()
     {
         $input = new Input(
             new UserName('techquest'),
@@ -48,7 +48,7 @@ final class SignUpTest extends TestCase
     /**
      * @test
      */
-    public function run_DB内に同じメールアドレスのユーザーがいたらfalse(): void
+    public function DBに同じメールのユーザー情報が存在する場合_falseが返ってくること(): void
     {
         $input = new Input(
             new UserName('techquest'),
